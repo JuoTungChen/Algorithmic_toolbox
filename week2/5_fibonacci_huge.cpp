@@ -26,9 +26,10 @@ long long pisano(long long m){
 	for (long long i = 0; i< m*m ; i++){
 		
 		long long temp = 0;
-		temp = curr;
-		curr = (prev + curr) % m;
-		prev = temp;
+		temp = curr;  // use temp to memorize the current num
+		// update curr with the last digit of the mod of the next fib num
+		curr = (prev + curr) % m;  
+		prev = temp;  // restore the previous curr to prev
 		if (prev == 0 && curr == 1)
 			res = i+1;
 	}

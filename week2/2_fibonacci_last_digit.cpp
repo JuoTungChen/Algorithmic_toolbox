@@ -24,8 +24,6 @@ int get_fibonacci_last_digit_fast(int n){
 		F[i] = (F[i-1] + F[i-2]) % 10;
 	}
 	return F[n];
-
-
 }
 
 
