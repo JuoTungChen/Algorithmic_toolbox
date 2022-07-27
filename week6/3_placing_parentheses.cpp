@@ -38,7 +38,7 @@ void MinAndMax(int i, int j, vector<vector<long long>> &m, vector<vector<long lo
 }
 
 long long get_maximum_value(const string &exp) {
-	int n = ceil(exp.size()/2) + 1;
+	int n = (1+exp.size())/2;
 	//std::cout<<"n = "<<n <<std::endl;
 
 	vector<vector<long long>> m(n+1, vector<long long>(n+1));
