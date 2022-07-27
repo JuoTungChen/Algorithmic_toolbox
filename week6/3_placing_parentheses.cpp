@@ -38,8 +38,8 @@ void MinAndMax(int i, int j, vector<vector<long long>> &m, vector<vector<long lo
 }
 
 long long get_maximum_value(const string &exp) {
+
 	int n = (1+exp.size())/2;
-	//std::cout<<"n = "<<n <<std::endl;
 
 	vector<vector<long long>> m(n+1, vector<long long>(n+1));
 	vector<vector<long long>> M(n+1, vector<long long>(n+1));
@@ -51,30 +51,13 @@ long long get_maximum_value(const string &exp) {
 			op+=exp[2*i+1];
 	}
 	
-
-	//std::cout<<op<<std::endl;
-
 	for(int s = 1; s<=(n-1); s++){
 		for(int i = 0; i<(n-s); i++){
 			int j = i+s;
-			//std::cout<<"s = "<<s<<", i = "<<i<<", j = " <<j<<std::endl;
 			MinAndMax(i, j, m, M, op);	
 		}
 	}
-	/*
-	for(int i = 0; i< n; i++){
-		for(int j =0; j<n; j++)
-			std::cout<<m[i][j]<<' ';
-		std::cout<<std::endl;
-	}
-	std::cout<<std::endl;
-	for(int i = 0; i< n; i++){
-		for(int j =0; j<n; j++)
-			std::cout<<M[i][j]<<' ';
-		std::cout<<std::endl;
-	}
-	*/
-	//return 0;
+	
   	return M[0][n-1];
 }
 
