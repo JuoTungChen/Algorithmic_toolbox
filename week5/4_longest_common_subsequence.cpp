@@ -11,7 +11,7 @@ int lcs2(vector<int> &a, vector<int> &b, int n, int m) {
 	for(int i = 0; i<=n; i++)
 		for (int j = 0; j<=m; j++)
 			dp[i][j] = 0;
-//	memset(dp, 0, sizeof(dp));
+
 	for(int i = 0; i<=n; i++){
 		for (int j = 0; j<=m; j++){
 			if(i == 0 || j == 0)
