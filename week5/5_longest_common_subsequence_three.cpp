@@ -7,7 +7,8 @@ int lcs3(vector<int> &a, vector<int> &b, vector<int> &c) {
 	
 	int x = a.size(), y = b.size(), z = c.size();
 	int dp[x+1][y+1][z+1];
-
+	
+	//initializing the dp table to 0
 	for (int i = 0; i<=x; i++)
 		for(int j = 0; j<=y; j++)
 			for(int k = 0; k<=z; k++)
@@ -19,14 +20,12 @@ int lcs3(vector<int> &a, vector<int> &b, vector<int> &c) {
 			
 				if(i==0 || j==0 || k==0)
 					dp[i][j][k]=0;
-
+				//if all of the characters match with each other
 				else if (a[i-1] == b[j-1] && b[j-1] == c[k-1])
-					dp[i][j][k] = 1+ dp[i-1][j-1][k-1];
+					dp[i][j][k] = 1+ dp[i-1][j-1][k-1];   //increase current dp 
 
-				//else if(a[i-1] != b[j-1] || a[i-1] != c[k-1] || b[j-1] != c[k-1])
 				else
 					dp[i][j][k] = std::max(std::max(dp[i-1][j][k], dp[i][j-1][k]), dp[i][j][k-1]);
-
 
 			}
 		}
