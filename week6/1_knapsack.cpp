@@ -5,36 +5,27 @@ using std::vector;
 
 int optimal_weight(int W, const vector<int> &w) {
 	int n = w.size();     // n = number of items
-	
-	int** table = new int* [W+1];  //create a 2D array
-	for(int i = 0; i<=W ; i++)
-		table[i] = new int[n+1];  //construct a table to record the results
-  	int result_weight = 0; //record the result
+
+	//2D array will cause unknown signal 11 -> use 2D vector instead
+	vector<vector<int>> table(W+1, vector<int>(n+1));
+	int result_weight = 0; //record the result
 		
 	for (int i = 0; i <= n; i++){
 		for(int k = 0; k <= W; k++){
 			if(i == 0 || k == 0)
-				table[i][k] = 0;
+				table[k][i] = 0;
 
 			else if (w[i-1] <= k)
 				table[k][i] = std::max(table[k-w[i-1]][i-1]+w[i-1], table[k][i-1]);
 			else
 				table[k][i] = table[k][i-1];
 
-			std::cout<<table[k][i]<<' ';
 			}
-		std::cout<<std::endl;
 		}
 	
 	
 	result_weight = table[W][n];
-	
-	// clear the dynamic array
-	for(int i = 0; i<=W; i++)
-		delete[] table[i];
-	delete[] table;
-
-  	return result_weight;
+	return result_weight;
 }
 
 int main() {
