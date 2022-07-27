@@ -50,8 +50,17 @@ To learn and practice fundamental algorithms, I enrolled in a class on coursera 
 6. Organizing a Lottery
 7. Closest Points
    
-### 5. [Dynamic Programming 1]()
-### 6. [Dynamic Programming 2]()
+### 5. [Dynamic Programming 1](https://github.com/JuoTungChen/Algorithmic_toolbox/tree/master/week5)
+1. Change Problem
+2. Primitive Calculator
+3. Edit Distance
+4. Longest Common Subsequence (2 sequences)
+5. Longest Common Subsequence (3 sequences)
+
+### 6. [Dynamic Programming 2](https://github.com/JuoTungChen/Algorithmic_toolbox/tree/master/week6)
+1. Maximum Amount of Gold
+2. Partitioning Souvenirs
+3. Placing Parentheses
 
 
 
