@@ -1,5 +1,7 @@
-# Algorithmic Toolbox
-To learn and practice fundamental algorithms, I enrolled in a class on coursera called [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox)
+# 🛠Algorithmic Toolbox
+To learn and practice fundamental algorithms, I enrolled in a class on coursera called [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox).
+I learned many essential algorithm design method like __divide-and-conquer__, __greedy algorithm__, and __dynamic programming__.
+I chose to write all the assignments with c++ to become more familiar with this programming language.
 
 &nbsp;
 
@@ -12,7 +14,7 @@ To learn and practice fundamental algorithms, I enrolled in a class on coursera 
 
 &nbsp;
 
-### My lecture notes in notion: [Algorithmic Toolbox Lecture Notes](https://shore-pajama-c59.notion.site/Algorithms-cea6c31fbb0747ccb9ee933a682f2108)
+### 📘 My lecture notes in notion: [Algorithmic Toolbox Lecture Notes](https://shore-pajama-c59.notion.site/Algorithms-cea6c31fbb0747ccb9ee933a682f2108)
 
 &nbsp;
 
