@@ -1,6 +1,6 @@
 # 🛠Algorithmic Toolbox
 To learn and practice fundamental algorithms, I enrolled in a class on coursera called [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox).
-I learned many essential algorithm design method like __divide-and-conquer__, __greedy algorithm__, and __dynamic programming__.
+I learned many essential algorithm design approaches like __divide-and-conquer__, __greedy algorithm__, and __dynamic programming__.
 I chose to write all the assignments with c++ to become more familiar with this programming language.
 
 &nbsp;
